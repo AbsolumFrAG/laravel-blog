@@ -4,7 +4,7 @@ return [
     /*
      * HTML Logo
      */
-    'logo' => 'Blog Laravel',
+    'logo' => 'Laravel_Blog',
 
     /*
      * Dashboard Home
@@ -44,10 +44,9 @@ return [
             'form' => ['blade' => 'lte3::components.form', 'default' => ['files' => true]],
             'btnSubmit' => ['blade' => 'lte3::components.btnSubmit', 'vars' => ['title', 'name', 'value', 'attrs']],
             'btnReset' => ['blade' => 'lte3::components.btnReset', 'vars' => ['title', 'attrs']],
-            'btnModalClose' => ['blade' => 'lte3::components.btnModalClose', 'vars' => ['title', 'attrs']],
             'hidden' => ['blade' => 'lte3::components.hidden', 'vars' => ['name', 'value', 'attrs']],
             'text' => ['blade' => 'lte3::components.text', 'vars' => ['name', 'value', 'attrs'], 'default' => ['type' => 'text']],
-            'number' => ['blade' => 'lte3::components.text', 'vars' => ['name', 'value', 'attrs'], 'default' => ['type' => 'number', 'default' => 0,]],
+            'number' => ['blade' => 'lte3::components.text', 'vars' => ['name', 'value', 'attrs'], 'default' => ['type' => 'number']],
             'email' => ['blade' => 'lte3::components.text', 'vars' => ['name', 'value', 'attrs'], 'default' => ['type' => 'email']],
             'url' => ['blade' => 'lte3::components.text', 'vars' => ['name', 'value', 'attrs'], 'default' => ['type' => 'url']],
             'password' => ['blade' => 'lte3::components.text', 'vars' => ['name', 'value', 'attrs'], 'default' => ['type' => 'password']],
@@ -66,16 +65,14 @@ return [
             'nestedset' => ['blade' => 'lte3::components.nestedset.tree', 'vars' => ['terms', 'attrs'], 'default' => ['item' => 'lte3::components.nestedset.item']],
 
             'xEditable' => ['blade' => 'lte3::components.xEditable', 'vars' => ['name', 'value', 'attrs']],
-            'datepicker' => ['blade' => 'lte3::components.datepicker', 'vars' => ['name', 'value', 'attrs'], 'default' => ['timezone' => env('APP_TIMEZONE_CLIENT', 'Europe/Kiev'), 'default' => now()->startOfDay()]],
-            'timepicker' => ['blade' => 'lte3::components.timepicker', 'vars' => ['name', 'value', 'attrs'], 'default' => ['timezone' => env('APP_TIMEZONE_CLIENT', 'Europe/Kiev'), 'default' => now()]],
-            'datetimepicker' => ['blade' => 'lte3::components.datetimepicker', 'vars' => ['name', 'value', 'attrs'], 'default' => ['timezone' => env('APP_TIMEZONE_CLIENT', 'Europe/Kiev'), 'default' => now()]],
+            'datepicker' => ['blade' => 'lte3::components.datepicker', 'vars' => ['name', 'value', 'attrs']],
+            'timepicker' => ['blade' => 'lte3::components.timepicker', 'vars' => ['name', 'value', 'attrs']],
+            'datetimepicker' => ['blade' => 'lte3::components.datetimepicker', 'vars' => ['name', 'value', 'attrs']],
 
             'file' => ['blade' => 'lte3::components.file', 'vars' => ['name', 'path', 'attrs']],
-            'fileForm' => ['blade' => 'lte3::components.fileForm', 'vars' => ['name', 'attrs']],
             'lfmFile' => ['blade' => 'lte3::components.lfmFile', 'vars' => ['name', 'path', 'attrs']],
-            'lfmImage' => ['blade' => 'lte3::components.lfmFile', 'vars' => ['name', 'path', 'attrs'], 'default' => ['lfm_category' => 'image', 'is_image' => 1]],
+            'fileForm' => ['blade' => 'lte3::components.fileForm', 'vars' => ['name', 'attrs']],
             'mediaFile' => ['blade' => 'lte3::components.mediaFile', 'vars' => ['name', 'model', 'attrs']],
-            'mediaImage' => ['blade' => 'lte3::components.mediaFile', 'vars' => ['name', 'model', 'attrs'], 'default' => ['is_image' => true, 'accept' => 'image/*']],
         ],
 
         'field_attrs' => [
