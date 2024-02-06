@@ -27,3 +27,5 @@ npm run dev
 ```
 
 Ouvrir la page http://localhost:8000.
+
+Pour ouvrir le panel administrateur, accédez à cet URL : http://localhost:8000/admin.
